@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Ordem do Chaos - Ordem Imperial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #e63946;
+        }
+        .book-description {
+            margin: 20px 0;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .price {
+            font-size: 24px;
+            color: #007BFF;
+        }
+        .payment-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nova Ordem do Chaos</h1>
+    <h2>Livro: Ordem Imperial</h2>
+    
+    <div class="book-description">
+        <h3>Descrição</h3>
+        <p>
+            "Ordem Imperial" é o primeiro livro da coleção Nova Ordem do Chaos. 
+            Acompanhe a jornada de Valen D'Orion e descubra o impacto do Caos no mundo.
+        </p>
+    </div>
+    
+    <div class="price">Preço: R$ 5,00</div>
+    
+    <div class="payment-button">
+        <!-- Código do botão do PayPal -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="sua-conta-paypal@example.com">
+            <input type="hidden" name="item_name" value="Ordem Imperial">
+            <input type="hidden" name="amount" value="5.00">
+            <input type="hidden" name="currency_code" value="BRL">
+            <input type="hidden" name="return" value="https://seu-site-de-confirmacao.com">
+            <input type="hidden" name="cancel_return" value="https://seu-site-de-cancelamento.com">
+            <input type="submit" value="Pagar com PayPal" style="padding: 10px 20px; font-size: 16px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        </form>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Nova Ordem do Chaos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
